@@ -1,9 +1,9 @@
-import { Example } from "./components/example";
+import { ExampleForm } from "#components/example-form";
 
 function App() {
   return (
     <div className="container p-4">
-      <Example />
+      <ExampleForm />
     </div>
   );
 }
