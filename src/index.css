@@ -1,6 +1,9 @@
+@source "../node_modules/@cloudflare/kumo/dist*.{js,jsx,ts,tsx}";
+@import "@cloudflare/kumo/styles/tailwind";
 @import "tailwindcss";
 
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
 }
+ØØ
