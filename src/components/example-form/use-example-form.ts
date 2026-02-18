@@ -1,11 +1,17 @@
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-import { useFormValidation } from "#hooks/use-form-validation";
-
-const schema = z.object({
+export const valueSchema = z.object({
   name: z.string().min(1, "Name is required"),
 });
 
-export function useExampleForm() {
-  return useFormValidation(schema);
+export type ExampleFormValue = z.infer<typeof valueSchema>;
+
+export function useExampleForm(defaultValues: ExampleFormValue) {
+  return useForm<ExampleFormValue>({
+    resolver: zodResolver(valueSchema),
+    mode: "onBlur",
+    defaultValues,
+  });
 }
