@@ -1,21 +1,11 @@
-import { Surface } from "@cloudflare/kumo/components/surface";
-
-import { ExampleDataTable } from "#components/example-data-table";
-import { ExampleForm } from "#components/example-form";
+import { SidebarLayout } from "#components/layouts/sidebar-layout";
+import { Dashboard } from "#components/dashboard/dashboard";
 
 function App() {
   return (
-    <div className="container p-4">
-      <Surface className="p-6 rounded-lg space-y-8 divide-y divide-kumo-line [&>div:not(:last-child)]:pb-8">
-        <div>
-          <ExampleForm />
-        </div>
-
-        <div>
-          <ExampleDataTable />
-        </div>
-      </Surface>
-    </div>
+    <SidebarLayout>
+      <Dashboard />
+    </SidebarLayout>
   );
 }
 
