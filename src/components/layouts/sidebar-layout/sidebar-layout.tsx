@@ -67,7 +67,7 @@ export function SidebarLayout({
             <Menu className="size-4" />
           </button>
           <div className="ml-4 font-bold text-lg flex items-center gap-2">
-            <div className="w-6 h-6 rounded bg-blue-500 rounded-bl-none flex items-center justify-center text-white">
+            <div className="w-6 h-6 rounded bg-kumo-brand rounded-bl-none flex items-center justify-center text-white">
               <Terminal className="size-4" />
             </div>
             Kumo UI
